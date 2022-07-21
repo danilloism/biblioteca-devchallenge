@@ -1,3 +1,3 @@
 packages:
   - 'apps/*'
-private: true
+prefer-workspace-packages: true

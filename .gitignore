@@ -1,1 +1,11 @@
+node_modules
+apps/*/node_modules
+apps/*/dist
+coverage
+apps/*/coverage
+lib-cov
+apps/*/lib-cov
+logs
 *.log
+apps/*/logs
+apps/*/*.log

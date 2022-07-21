@@ -1,6 +1,5 @@
 import glob from 'tiny-glob';
 import { build } from 'esbuild';
-import esbuildPluginPino from 'esbuild-plugin-pino';
 (async function () {
   const entryPoints = await glob('src/**/*.ts');
 
