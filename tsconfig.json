@@ -18,7 +18,10 @@
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "moduleResolution": "Node",
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "skipLibCheck": true,
+    "declaration": true,
+    "pretty": true,
   },
   "exclude": [
     "node_modules",
