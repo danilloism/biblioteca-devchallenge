@@ -5,10 +5,8 @@ specifiers:
   '@fastify/sensible': ^5.1.0
   '@fastify/swagger': ^7.4.1
   esbuild: ^0.14.49
-  esbuild-plugin-pino: 1.2.1
   fastify: ^4.3.0
   fastify-plugin: ^4.0.0
-  fastify-tsconfig: ^1.0.1
   json-schema-to-ts: ^2.5.4
   pino: ^8.3.0
   pino-pretty: ^8.1.0
@@ -26,8 +24,6 @@ dependencies:
 
 devDependencies:
   esbuild: 0.14.49
-  esbuild-plugin-pino: 1.2.1
-  fastify-tsconfig: 1.0.1
   pino-pretty: 8.1.0
 
 packages:
@@ -378,10 +374,6 @@ packages:
     dev: true
     optional: true
 
-  /esbuild-plugin-pino/1.2.1:
-    resolution: {integrity: sha512-/FPwFFc1pOEzG/Rtc76bKXJOn84xuQXavuVXsjA7Dxp0+3W+3frPfgjRZJW8srH8HXsLFZM7MMWDrtA0/C71UA==}
-    dev: true
-
   /esbuild-sunos-64/0.14.49:
     resolution: {integrity: sha512-4c8Zowp+V3zIWje329BeLbGh6XI9c/rqARNaj5yPHdC61pHI9UNdDxT3rePPJeWcEZVKjkiAS6AP6kiITp7FSw==}
     engines: {node: '>=12'}
@@ -497,11 +489,6 @@ packages:
   /fastify-plugin/4.0.0:
     resolution: {integrity: sha512-ZJcXPPcqkj7HFDYqbsCuOIAgIZ/sd2b+OnBxNGyxAcUDUJfIpxp4t23CwxO2E7LZpqUrIliA4TnjxTXG8mLoqw==}
     dev: false
-
-  /fastify-tsconfig/1.0.1:
-    resolution: {integrity: sha512-BXkTG3JYcjJb3xX5R5FcE9ciscV/h7YtmnkiSaNAONd1g6ooMSN/4GWfhA8hnS6SRZFYBBxsn8719Mj9lbCOtA==}
-    engines: {node: '>=10.4.0'}
-    dev: true
 
   /fastify/4.3.0:
     resolution: {integrity: sha512-9q5Ron8jWmX6ElFkgZH4zmIIXdnkGIu16JozWG2ohcs7th5rAo1ymNi+rn6xCmbWc6jl9lf+9OxVe93LOg6/2w==}
