@@ -1,4 +1,4 @@
-import { FastifyInstance } from 'fastify';
+import type { FastifyInstance } from 'fastify';
 import {
   deleteObraHandler,
   getObrasHandler,
@@ -13,13 +13,13 @@ import {
   obraSchema,
   postObraSchema,
   putObraSchema,
-} from './schema';
+} from './schemas';
 
-export default async (fastify: FastifyInstance) => {
+export default async function obrasRouter(fastify: FastifyInstance) {
   fastify.addSchema(obraSchema);
   fastify.get('/', { schema: getObrasSchema }, getObrasHandler);
-  fastify.get('/:obraId', { schema: getOneObraSchema }, getOneObraHandler);
-  fastify.put('/:obraId', { schema: putObraSchema }, putObraHandler);
+  fastify.get('/:id', { schema: getOneObraSchema }, getOneObraHandler);
+  fastify.put('/:id', { schema: putObraSchema }, putObraHandler);
   fastify.post('/', { schema: postObraSchema }, postObraHandler);
-  fastify.delete('/:obraId', { schema: deleteObraSchema }, deleteObraHandler);
-};
+  fastify.delete('/:id', { schema: deleteObraSchema }, deleteObraHandler);
+}
